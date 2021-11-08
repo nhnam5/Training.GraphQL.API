@@ -10,6 +10,8 @@ namespace Training.GraphQL.API.IService
     {
         public List<UserAsset> GetAll();
         public UserAsset GetById(long id);
+        public List<UserAsset> GetByUserId(long id);
+        public List<UserAsset> GetByAssetId(long id);
         public List<UserAsset> CreateUserAsset(UserAsset userAsset);
         public List<UserAsset> UpdateUserAsset(UserAsset userAssetUpdate, UserAsset userAsset);
         public List<UserAsset> DeleteUserAsset(UserAsset userAsset);

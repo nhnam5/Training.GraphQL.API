@@ -36,9 +36,19 @@ namespace Training.GraphQL.API.Service
             return userAssets;
         }
 
+        public List<UserAsset> GetByAssetId(long id)
+        {
+            return userAssets.Where(x => x.AssetId.Equals(id)).ToList();
+        }
+
         public UserAsset GetById(long id)
         {
             return userAssets.SingleOrDefault(x => x.Id.Equals(id));
+        }
+
+        public List<UserAsset> GetByUserId(long id)
+        {
+            return userAssets.Where(x => x.UserId.Equals(id)).ToList();
         }
 
         public List<UserAsset> UpdateUserAsset(UserAsset userAssetUpdate, UserAsset userAsset)

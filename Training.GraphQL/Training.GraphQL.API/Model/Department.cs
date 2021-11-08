@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Training.GraphQL.API.Model
 {
-    public class Asset
+    public class Department
     {
         public long Id { get; set; }
         public string Name { get; set; }

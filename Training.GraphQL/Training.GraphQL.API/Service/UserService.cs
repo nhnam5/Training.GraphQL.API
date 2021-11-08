@@ -12,9 +12,9 @@ namespace Training.GraphQL.API.Service
         List<User> users = new List<User>();
         public UserService() 
         {
-            users.Add(new User { Id = 1, Name = "Jon" });
-            users.Add(new User { Id = 2, Name = "Lemon" });
-            users.Add(new User { Id = 3, Name = "Sun" });
+            users.Add(new User { Id = 1, Name = "Jon", RoleId = 1, DepartmentId = 1 });
+            users.Add(new User { Id = 2, Name = "Lemon", RoleId = 2, DepartmentId = 2 });
+            users.Add(new User { Id = 3, Name = "Sun", RoleId = 3, DepartmentId = 3 });
         }
         public User GetById(long id)
         {

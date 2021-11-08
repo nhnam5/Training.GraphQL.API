@@ -12,9 +12,9 @@ namespace Training.GraphQL.API.Service
         List<Asset> assets = new List<Asset>();
         public AssetService()
         {
-            assets.Add(new Asset { Id = 1, Name = "Mouse" });
-            assets.Add(new Asset { Id = 2, Name = "Desktop" });
-            assets.Add(new Asset { Id = 3, Name = "Pen" });
+            assets.Add(new Asset { Id = 1, Name = "Mouse", Source = "ABC" });
+            assets.Add(new Asset { Id = 2, Name = "Desktop", Source = "CDC" });
+            assets.Add(new Asset { Id = 3, Name = "Pen", Source = "CDCC" });
         }
         public Asset GetById(long id)
         {

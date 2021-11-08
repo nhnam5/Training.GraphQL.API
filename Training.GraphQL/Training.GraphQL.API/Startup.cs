@@ -24,6 +24,8 @@ namespace Training.GraphQL.API
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAssetService, AssetService>();
             services.AddScoped<IUserAssetService, UserAssetService>();
+            services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IRoleService, RoleService>();
 
             services.AddScoped<AppSchema>();
 

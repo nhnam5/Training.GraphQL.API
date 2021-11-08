@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace Training.GraphQL.API.Model
 {
-    public class Asset
+    public class Role
     {
         public long Id { get; set; }
         public string Name { get; set; }
-        public string Source { get; set; }
-        public List<UserAsset> UserAssets { get; set; }
     }
 }
